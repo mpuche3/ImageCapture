@@ -4,10 +4,27 @@
 <head>
 <meta charset="utf-8">
 <title>Capture image</title>
+<link rel="stylesheet" href="style/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.2"> </script>
 </head>
 
 <body>
-<video></video>
+
+<video id="video" width=200 height=200 autoplay></video>
+
+<div>
+    <canvas id="canvasLeft" width=200 height=200></canvas>
+    <canvas id="canvasStraight" width=200 height=200></canvas>
+    <canvas id="canvasRight" width=200 height=200></canvas>
+</div>
+
+
+<button id="bttn_0"/> ZEROS </button>
+<button id="bttn_1"/> ONES </button>
+
+<script src="code/Webcam.js"></script>
+<script src="code/main.js"></script>
+
 </div>
 
 </body>
